@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.content{
+    background-image: url('images/backgroundIMAGE.jpg');
+    /* height: 900px;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    background-position: center center ;
+    background-size:644px
+    background-repeat: no-repeat; */
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+    
+    
+}
+.forcover{
+    background-color: rgb(0, 0, 0);
+    height: 644px;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+
+    
+}
+.navbar{
+    
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    
+   
+}
+nav img{
+    z-index:1;
+    position: relative;
+}
+.btn{
+    position: relative;
+    z-index: 1;
+}

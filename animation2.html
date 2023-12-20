@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 100px;
+            font-weight: 7;
+            position: relative;
+        }
+        h1::after{
+            content: "";
+            height: 5px;
+            width: 0%;
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            
+            
+        }
+        h1:hover::after{
+            animation: underlineanimi;
+            animation-duration: 1s;
+            ;
+        }
+        @keyframes underlineanimi {
+            0%{
+                width: 0;
+                
+            }
+            50%{
+                width: 100%;
+                left: 0%;
+            }
+            100%{
+                width: 0%;
+                left: 100%;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+</html>

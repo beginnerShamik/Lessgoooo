@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 150px;
+            font-family: Arial;
+            font-weight: 100;
+            position: relative;
+        }
+
+        h1::after {
+            content: "";
+            height: 10px;
+            width: 0%;
+            background-color: black;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            
+        }
+
+        @keyframes animi {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                left: 0;
+                width: 100%;
+            }
+
+            100% {
+                width: 0;
+                left: 100%;
+            }
+        }
+        h1:hover:after{
+            animation: animi;
+            animation-duration: 1s;
+        }    
+    </style>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+</body>
+
+</html>

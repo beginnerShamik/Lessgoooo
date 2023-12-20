@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            animation-name: shamik;
+            animation-duration: 4s;
+            /* animation-iteration-count: 40; */
+            /* animation-timing-function: ease-in-out; */
+            animation-delay: 1ms;
+            position: absolute;
+            /* animation-iteration-count: 9000; */
+            animation-fill-mode: both;
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+
+        }
+
+        @keyframes shamik {
+            0% {
+                top: 0;
+                left: 0;
+                background-color: brown;
+                
+
+            }
+
+            50% {
+                top: 10%;
+                left: 75%;
+                rotate: 360deg;
+            }
+
+            100% {
+                top: 50%;
+                left: 75%;
+                
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selector</title>
+</head>
+<style>
+    .boxes::before {
+        content: "Hello";
+    }
+
+    .boxes::before {
+        content: "hello After";
+
+        ::selection {
+            color: aqua;
+        }
+    }
+
+    .box:nth-child(2)::selection {
+        color: aquamarine;
+        /* background-color: violet; */
+    }
+
+    .box:nth-child(2)::first-letter {
+        color: aqua;
+        font-size: 70px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    input::placeholder{
+        color: aquamarine;
+        font-size: xx-large;
+        font-stretch: ultra-condensed;
+    }
+
+</style>
+
+<body>
+    <div class="boxes">
+        <div class="box">This is 1</div>
+        <div class="box">This is 2</div>
+        <div class="box">This is 3</div>
+        <span>enter name</span>
+        <input type="text" placeholder="type your name">
+    </div>
+</body>
+
+</html>
